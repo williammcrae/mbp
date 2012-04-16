@@ -1,3 +1,8 @@
+
+body {
+  color: #00008b;
+}
+
 .grid_1,
 .grid_2,
 .grid_3,
@@ -46,9 +51,6 @@
 }
 
 
-.gray {
-    color: gray;
-}
 
 img.splash {
     display: none;
@@ -56,7 +58,7 @@ img.splash {
 
 div.header {
     margin: 5px;
-    border: solid 1px gray;
+    border: solid 1px #00008b;
     box-shadow: 3px 3px 3px #888;
 }
 
@@ -87,7 +89,7 @@ div.header {
 
 div.break {
     box-shadow: 3px 3px 3px #888;
-    border: solid 1px gray;
+    border: solid 1px #00008b;
     margin-bottom: 3px;
 }
 
@@ -114,7 +116,7 @@ div.small {
 
 div.footer {
     margin: 5px;
-    border: solid 1px gray;
+    border: solid 1px #00008b;
     box-shadow: 3px 3px 3px #888;
 }
 

@@ -15,6 +15,7 @@
 
 body {
   min-width: 960px;
+  color: #00008b;
 }
 
 /* `Containers
@@ -377,13 +378,13 @@ body {
 }
 
 .gray {
-    color: gray;
+    color: #add8e6;
 }
 
 div.header {
     margin-top: 12px;
     margin-bottom: 12px;
-    border: solid 1px gray;
+    border: solid 1px #00008b;
     box-shadow: 3px 3px 3px #888;
 }
 
@@ -413,7 +414,7 @@ div.header {
 
 div.break {
     box-shadow: 3px 3px 3px #888;
-    border: solid 1px gray;
+    border: solid 1px #00008b;
     margin-bottom: 3px;
 }
 
@@ -446,8 +447,9 @@ div.small {
 div.footer {
     margin-top: 12px;
     margin-bottom: 12px;
-    border: solid 1px gray;
+    border: solid 1px #00008b;
     box-shadow: 3px 3px 3px #888;
+    color: #00008b;
 }
 
 .footer p {
