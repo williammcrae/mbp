@@ -104,6 +104,9 @@ div.small {
 
 .small img {
     margin-bottom: 5px;
+    box-shadow: 3px 3px 3px #888;
+    border: solid 1px #00008b;
+    width: 297px;
 }
 
 .small h3 {

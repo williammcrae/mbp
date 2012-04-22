@@ -428,12 +428,14 @@ div.space {
 }
 
 div.small {
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 .small img {
     margin-bottom: 5px;
+    box-shadow: 3px 3px 3px #888;
+    border: solid 1px #00008b;
 }
 
 .small h3 {
