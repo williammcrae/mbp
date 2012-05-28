@@ -457,3 +457,25 @@ div.footer {
 .footer p {
     margin-bottom: 0px;
 }
+
+.slides {
+    height: 341px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.slides img {
+    display: none;
+    height: 341px;
+    position: absolute;
+    width: 541px;
+    z-index: 1;
+    box-shadow: 3px 3px 3px #888;
+    border: solid 1px #00008b;
+}
+
+.slides img:first-child {
+    display: block;
+}
+
