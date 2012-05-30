@@ -450,6 +450,12 @@ div.small {
     margin-bottom: 5px;
 }
 
+.small h5 {
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
 .small p {
     margin-bottom: 5px;
 }
@@ -486,4 +492,5 @@ div.footer {
 .slides img:first-child {
     display: block;
 }
+
 
