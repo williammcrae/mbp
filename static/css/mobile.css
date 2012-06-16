@@ -103,10 +103,12 @@ div.small {
 }
 
 .small img {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 5px;
     box-shadow: 3px 3px 3px #888;
     border: solid 1px #00008b;
-    width: 297px;
+    width: 100%;
 }
 
 .small h3 {
