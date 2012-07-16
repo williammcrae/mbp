@@ -119,11 +119,17 @@ code {
   padding: 0 2px;
 }
 
-li {
+ul li {
     list-style-type: disc;
+    margin-left: 15px;
+}
+
+ol li {
+    list-style-type: decimal;
     margin-left: 15px;
 }
 
 .falls p, .falls h2 {
    margin-bottom: 5px;
 }
+
