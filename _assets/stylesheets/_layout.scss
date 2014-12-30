@@ -1,0 +1,341 @@
+/**
+ * Site header
+ */
+.site-header {
+    min-height: 30px;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+
+  .phones {
+    text-align: right;
+    @include media-query($on-laptop) {
+      text-align: left;
+    }
+    @include media-query($on-palm) {
+      display: none;
+    }
+  }
+
+  .address {
+    text-align: left;
+    @include media-query($on-palm) {
+      display: none;
+    }
+  }
+
+  .banner {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border: solid 1px #00008b;
+    box-shadow: 3px 3px 3px #888;
+
+    @include media-query($on-laptop) {
+      margin: 5px;
+    }
+
+    @include media-query($on-palm) {
+      max-width: -webkit-calc(100% - 65px);
+      max-width:         calc(100% - 65px);
+
+    }
+  }
+}
+
+.site-title {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
+
+    img {
+      height: 1.25em;
+    }
+}
+
+.site-nav {
+    float: right;
+    line-height: 30px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 4px;
+        right: 5px;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+        box-shadow: 3px 3px 3px #888;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $grey-color-dark;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+        }
+    }
+}
+
+/**
+ * Wrapper
+ */
+.wrapper-col-wrapper {
+  font-size: 15px;
+  color: $text-color;
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix;
+}
+
+.wrapper-col {
+  float: left;
+  margin-bottom: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+}
+
+.wrapper-col-0 {
+  width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+  width:         calc(100% - (#{$spacing-unit} / 2));
+}
+
+.wrapper-col-1 {
+  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+  width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.wrapper-col-2 {
+  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+  width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.wrapper-col-3 {
+  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+  width:         calc(50% - (#{$spacing-unit} / 2));
+}
+
+.wrapper-col-a {
+  width: -webkit-calc(65% - (#{$spacing-unit} / 2));
+  width:         calc(65% - (#{$spacing-unit} / 2));
+}
+
+.wrapper-col-b {
+  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+  width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+  .wrapper-col-1,
+  .wrapper-col-2 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+  }
+
+  .wrapper-col-a {
+    width: -webkit-calc(60% - (#{$spacing-unit} / 2));
+    width:         calc(60% - (#{$spacing-unit} / 2));
+  }
+
+  .wrapper-col-b {
+    width: -webkit-calc(40% - (#{$spacing-unit} / 2));
+    width:         calc(40% - (#{$spacing-unit} / 2));
+  }
+
+  .wrapper-col-3 {
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+@include media-query($on-palm) {
+  .wrapper-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+    padding: $spacing-unit 0;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: $text-color;
+    margin-left: -$spacing-unit / 2;
+    @extend %clearfix;
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+    .footer-col-1,
+    .footer-col-2 {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-3 {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+@include media-query($on-palm) {
+    .footer-col {
+        float: none;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: $spacing-unit 0 0 0;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+
+/**
+ * Parts
+ */
+
+.contact {
+  text-align: center;
+  h1, h2, h3, h4, h5 {
+    margin: 5px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .name {
+
+  }
+
+  .address {
+
+  }
+
+  .other {
+
+  }
+}
+
+.slides {
+  position: relative;
+  height: 320px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  img {
+    display: none;
+    position: absolute;
+    width: 500px; //541px;
+    width: -webkit-calc(100% - (#{$spacing-unit}));
+    width:         calc(100% - (#{$spacing-unit}));
+    z-index: 1;
+    box-shadow: 3px 3px 3px #888;
+    border: solid 1px #00008b;
+
+    &:first-child {
+      display: block;
+    }
+
+  }
+}
+
+@include media-query($on-palm) {
+  .slides {
+    display: none;
+  }
+}
+

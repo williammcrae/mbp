@@ -1,0 +1,25 @@
+# Site settings
+title: "Mount Beauty Pharmacy"
+email: pharmacy@mountbeautypharmacy.com.au
+subtitle: ""
+description:
+company: "Mount Beauty Pharmacy"
+baseurl: ""
+url: "http://williammcrae.github.io/mbp"
+
+# Build settings
+markdown: kramdown
+
+include:     ['.htaccess']
+exclude:     ['vendor','Rakefile','Gemfile','Gemfile.lock','CNAME']
+
+#
+# jekyll-assets: see more at https://github.com/ixti/jekyll-assets
+#
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images

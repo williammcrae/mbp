@@ -1,7 +1,6 @@
+_site/
+vendor/
+.bundle/
+.sass-cache/
 .DS_Store
-REVISION
-*.orig
-app/sites/default/settings.php
-app/sites/default/files
-app/sites/default/private
-
+.idea
