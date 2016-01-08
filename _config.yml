@@ -4,7 +4,7 @@ email: pharmacy@mountbeautypharmacy.com.au
 subtitle: ""
 description:
 company: "Mount Beauty Pharmacy"
-baseurl: ""
+baseurl: "/mbp"
 url: "http://williammcrae.github.io/mbp"
 
 # Build settings
@@ -18,7 +18,7 @@ exclude:     ['vendor','Rakefile','Gemfile','Gemfile.lock','CNAME']
 #
 assets:
   dirname: assets
-  baseurl: /assets/
+  baseurl: /mbp/assets/
   sources:
     - _assets/javascripts
     - _assets/stylesheets
